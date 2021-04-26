@@ -7,7 +7,7 @@ namespace Pastry.Tests
     public class PastryMethodTests
     {
         [TestMethod]
-        public void PastryIs_OnePastryCostsThree_Three()
+        public void PastryIs_OnePastryCostsTwo_Two()
         {
             PastryPrice testPastry = new PastryPrice();
             Assert.AreEqual(true, testPastry.PastryIs(1));
