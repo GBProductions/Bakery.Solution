@@ -9,6 +9,7 @@ namespace Pastry.Tests
         [TestMethod]
         public void PastryIs_OnePastryCostsThree_Three()
         {
+            PastryPrice testBakeryProgram = new PastryPrice();
         }
     }
 }
