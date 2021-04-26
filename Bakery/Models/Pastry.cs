@@ -2,9 +2,9 @@ namespace Pastry.Models
 {
     public class PastryPrices
     {
-        public static string PastryMethod()
+        public bool PastryMethod()
         {
-
+            return false;
         }
     }
 }
