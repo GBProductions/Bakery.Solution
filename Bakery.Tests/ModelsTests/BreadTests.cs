@@ -7,9 +7,9 @@ namespace Bread.Tests
     public class BreadMethodTests
     {
         [TestMethod]
-        public void BreadIs_OneBreadCostsFive_Int()
+        public void BreadIs_TwoBreadCostsTen_Int()
         {
-            Assert.AreEqual(0, BreadPrice.BreadIs(1));
+            Assert.AreEqual(10, BreadPrice.BreadIs(2));
         }
     }
 }
