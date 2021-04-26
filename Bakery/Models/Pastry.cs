@@ -2,9 +2,9 @@ namespace Pastry.Models
 {
     public class PastryPrice
     {
-        public bool PastryIs()
+        public bool PastryIs(int pastry)
         {
-            return false;
+            return (pastry * 2 == 2);
         }
     }
 }
