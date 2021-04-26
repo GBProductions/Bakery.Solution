@@ -11,5 +11,11 @@ namespace Pastry.Tests
         {
             Assert.AreEqual(4, PastryPrice.PastryIs(2));
         }
+
+        [TestMethod]
+        public void PastryIs_ThreePastryCostsFive_Int()
+        {
+            Assert.AreEqual(5, PastryPrice.PastryIs(3));
+        }
     }
 }
