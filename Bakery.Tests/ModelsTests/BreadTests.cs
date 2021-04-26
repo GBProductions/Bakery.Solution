@@ -11,5 +11,11 @@ namespace Bread.Tests
         {
             Assert.AreEqual(10, BreadPrice.BreadIs(2));
         }
+
+        [TestMethod]
+        public void BreadIs_ThreeBreadCostsTen_Int()
+        {
+            Assert.AreEqual(10, BreadPrice.BreadIs(3));
+        }
     }
 }
