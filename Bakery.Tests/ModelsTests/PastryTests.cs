@@ -9,7 +9,8 @@ namespace Pastry.Tests
         [TestMethod]
         public void PastryIs_OnePastryCostsThree_Three()
         {
-            PastryPrice testBakeryProgram = new PastryPrice();
+            PastryPrice testPastry = new PastryPrice();
+            Assert.AreEqual(true, testPastry.PastryIs(1));
         }
     }
 }
