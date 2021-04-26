@@ -7,7 +7,7 @@ namespace Pastry.Tests
     public class PastryMethodTests
     {
         [TestMethod]
-        public void ksfafsf()
+        public void PastryIs_OnePastryCostsThree_Three()
         {
         }
     }
