@@ -4,7 +4,12 @@ namespace Pastry.Models
     {
         public static int PastryIs(int pastry)
         {
-            return (pastry * 2);
+            var pastryRemainders = (pastry % 3);
+            var pastryOrder = (pastry - pastryRemainders);
+            var finalOrder = ((pastryOrder / 3) * (5));
+            var noDeal = (pastryRemainders * 2);
+
+            return (noDeal + finalOrder);
         }
     }
 }
