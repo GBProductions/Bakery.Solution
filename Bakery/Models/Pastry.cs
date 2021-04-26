@@ -1,8 +1,8 @@
 namespace Pastry.Models
 {
-    public class PastryPrices
+    public class PastryPrice
     {
-        public bool PastryMethod()
+        public bool PastryIs()
         {
             return false;
         }

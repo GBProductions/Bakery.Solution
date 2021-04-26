@@ -1,10 +1,10 @@
 namespace Bread.Models
 {
-    public class Bread
+    public class BreadPrice
     {
-        public bool BreadMethod()
+        public bool BreadIs(int bread)
         {
-            return false;
+            return (bread * 5 == 5);
         }
     }
 }
