@@ -2,9 +2,9 @@ namespace Order.Models
 {
     public class OrderPrice
     {
-        public bool OrderIs(int breadResponse, int pastryResponse)
+        public static int OrderIs(int breadResponse, int pastryResponse)
         {
-            return true;
+            return 1;
         }
     }
 }
