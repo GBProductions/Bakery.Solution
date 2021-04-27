@@ -4,7 +4,7 @@ namespace Order.Models
     {
         public static int OrderIs(int breadResponse, int pastryResponse)
         {
-            return 1;
+            return (breadResponse + pastryResponse);
         }
     }
 }
