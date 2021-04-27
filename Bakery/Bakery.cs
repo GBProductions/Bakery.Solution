@@ -23,7 +23,7 @@ namespace Bakery
 
             int breadResponse =  BreadPrice.BreadIs(bread);
             int pastryResponse = PastryPrice.PastryIs(pastry);
-            int overallOrder = 5;
+            int overallOrder = 3;
 
             Console.WriteLine("Your order: " + bread + " loaves for $" + breadResponse + ".");
             Console.WriteLine("Your order: " + pastry + " individual pastries for $" + pastryResponse + ".");
