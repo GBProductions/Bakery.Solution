@@ -4,7 +4,7 @@ namespace Order.Models
     {
         public bool OrderIs(int breadResponse, int pastryResponse)
         {
-            return false;
+            return true;
         }
     }
 }

@@ -9,7 +9,8 @@ namespace Order.Tests
         [TestMethod]
         public void OrderIs_TwoPlusFiveisSeven_True()
         {
-            Assert.AreEqual(7, OrderPrice.OrderIs(2, 5));
+            OrderPrice myPrice = new OrderPrice();
+            Assert.AreEqual(true, myPrice.OrderIs(2, 5));
         }
     }
 }
