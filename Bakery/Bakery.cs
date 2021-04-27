@@ -1,7 +1,7 @@
 using System;
 using Pastry.Models;
 using Bread.Models;
-using System.Collections.Generic;
+using Order.Models;
 
 namespace Bakery
 {
@@ -21,7 +21,14 @@ namespace Bakery
             string stringPastry = Console.ReadLine();
             int pastry = int.Parse(stringPastry);
 
-            Console.WriteLine("You want " + bread + " loaves and " + pastry + " individual pastries.");
+            int breadResponse =  BreadPrice.BreadIs(bread);
+            int pastryResponse = PastryPrice.PastryIs(pastry);
+            int overallOrder = OrderPrice.PriceIs(breadResponse, pastryResponse);
+
+            Console.WriteLine("Your order: " + bread + " loaves for $" + breadResponse + ".");
+            Console.WriteLine("Your order: " + pastry + " individual pastries for $" + pastryResponse + ".");
+            Console.WriteLine("Your total will be $" + overallOrder + ".");
+
         }
     }
 }
