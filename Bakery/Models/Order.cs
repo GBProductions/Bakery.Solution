@@ -1,4 +1,4 @@
-namespace Order.Models
+namespace Bakery.Models
 {
     public class OrderPrice
     {

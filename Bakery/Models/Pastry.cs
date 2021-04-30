@@ -1,4 +1,4 @@
-namespace Pastry.Models
+namespace Bakery.Models
 {
     public class PastryPrice
     {

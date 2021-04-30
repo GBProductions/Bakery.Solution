@@ -1,4 +1,4 @@
-namespace Bread.Models
+namespace Bakery.Models
 {
     public class BreadPrice
     {
