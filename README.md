@@ -9,8 +9,8 @@
 ## Description
 
 _This is a point-of-sale system for Pierre's Bakery._
-_Loafs of bread is $5. Or, you can buy 2, and get 1 free._
-_Individual pastries is $2. Or, you can buy 3 for $5._
+* _Loafs of bread is $5. Or, you can buy 2, and get 1 free._
+* _Individual pastries is $2. Or, you can buy 3 for $5._
 
 ## Setup/Installation Requirements
 
