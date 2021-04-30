@@ -17,11 +17,11 @@ _This is a point-of-sale system for Pierre's Bakery._
 * _Open the terminal on your local machine_
 * _Clone this project with the following git command `git clone https://github.com/GBProductions/Bakery_Csharp`_
 * _Navigate to the top level of the repository with the command `cd Bakery.Solution`_
-* _Navigate into Bakery.cs with git command `cd Bakery.cs`_
+* _Navigate into Bakery with git command `cd Bakery`_
 * _Build project with git command `dotnet build`_
 * _Navigate to Test folder with git comamnds `cd ..` and then `cd Bakery.Tests`_ 
 * _To check if tests pass, run git command `dotnet test`_
-* _If tests pass, navigate back to Bakery.cs with git command `cd ..` and then `cd Bakery.cs`_
+* _If tests pass, navigate back to Bakery.cs with git command `cd ..` and then `cd Bakery`_
 * _To run program, run git command `dotnet run`_
 
 ## Known Bugs
