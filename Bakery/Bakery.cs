@@ -13,18 +13,18 @@ namespace Bakery
 
             Console.WriteLine("How many loaves of Bread do you want? Enter a number please.");
             string stringBread = Console.ReadLine();
-            int bread = int.Parse(stringBread);
+            int BreadNumber = int.Parse(stringBread);
 
             Console.WriteLine("How many pastries do you want? Enter a number please.");
             string stringPastry = Console.ReadLine();
-            int pastry = int.Parse(stringPastry);
+            int PastryNumber = int.Parse(stringPastry);
 
-            int breadResponse =  BreadPrice.BreadIs(bread);
-            int pastryResponse = PastryPrice.PastryIs(pastry);
+            int breadResponse =  Bread.CalculateBread(5, BreadNumber);
+            int pastryResponse = Pastry.CalculatePastry(2, PastryNumber);
             int overallOrder = OrderPrice.OrderIs(breadResponse, pastryResponse);
 
-            Console.WriteLine("Your order: " + bread + " loaves for $" + breadResponse + ".");
-            Console.WriteLine("Your order: " + pastry + " individual pastries for $" + pastryResponse + ".");
+            Console.WriteLine("Your order: " + BreadNumber + " loaves for $" + breadResponse + ".");
+            Console.WriteLine("Your order: " + PastryNumber + " individual pastries for $" + pastryResponse + ".");
             Console.WriteLine("Your total will be $" + overallOrder + ".");
 
         }

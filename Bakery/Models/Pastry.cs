@@ -1,16 +1,27 @@
 namespace Bakery.Models
 {
-    public class PastryPrice
+    public class Pastry
     {
-        public static int PastryIs(int pastry)
+        //Public properties
+        public int PastryPrice { get; set; }
+        public int PastryNumber { get; set; }
+
+        //Constructor
+        public Pastry(int pastryPrice, int pastryNumber)
         {
-            if (pastry <= 2) {
-                return (pastry * 2);
+            PastryPrice = pastryPrice;
+            PastryNumber = pastryNumber;
+        }
+
+        public static int CalculatePastry(int pastryPrice, int pastryNumber)
+        {
+            if (pastryNumber <= 2) {
+                return (pastryNumber * pastryPrice);
             } else {
-                var pastryRemainders = (pastry % 3);
-                var pastryOrder = (pastry - pastryRemainders);
+                var pastryRemainders = (pastryNumber % 3);
+                var pastryOrder = (pastryNumber - pastryRemainders);
                 var finalOrder = ((pastryOrder / 3) * (5));
-                var noDeal = (pastryRemainders * 2);
+                var noDeal = (pastryRemainders * pastryPrice);
 
                 return (noDeal + finalOrder);
             }

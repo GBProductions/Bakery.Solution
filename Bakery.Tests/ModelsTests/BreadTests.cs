@@ -1,21 +1,21 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Bakery.Models;
 
-namespace Bread.Tests 
+namespace Bakery.Tests 
 {
     [TestClass]
     public class BreadMethodTests
     {
         [TestMethod]
-        public void BreadIs_TwoBreadCostsTen_Int()
+        public void CalculateBread_TwoBreadCostsTen_Int()
         {
-            Assert.AreEqual(10, BreadPrice.BreadIs(2));
+            Assert.AreEqual(10, Bread.CalculateBread(5, 2));
         }
 
         [TestMethod]
-        public void BreadIs_ThreeBreadCostsTen_Int()
+        public void CalculateBread_ThreeBreadCostsTen_Int()
         {
-            Assert.AreEqual(10, BreadPrice.BreadIs(3));
+            Assert.AreEqual(10, Bread.CalculateBread(5, 3));
         }
     }
 }

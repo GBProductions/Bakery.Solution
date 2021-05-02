@@ -1,27 +1,27 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Bakery.Models;
 
-namespace Pastry.Tests 
+namespace Bakery.Tests 
 {
     [TestClass]
     public class PastryMethodTests
     {
         [TestMethod]
-        public void PastryIs_TwoPastryCostsFour_Int()
+        public void CalculatePastry_TwoPastryCostsFour_Int()
         {
-            Assert.AreEqual(4, PastryPrice.PastryIs(2));
+            Assert.AreEqual(4, Pastry.CalculatePastry(2, 2));
         }
 
         [TestMethod]
-        public void PastryIs_ThreePastryCostsFive_Int()
+        public void CalculatePastry_ThreePastryCostsFive_Int()
         {
-            Assert.AreEqual(5, PastryPrice.PastryIs(3));
+            Assert.AreEqual(5, Pastry.CalculatePastry(2, 3));
         }
 
         [TestMethod]
-        public void PastryIs_OnePastryCostsTwo_Int()
+        public void CalculatePastry_OnePastryCostsTwo_Int()
         {
-            Assert.AreEqual(2, PastryPrice.PastryIs(1));
+            Assert.AreEqual(2, Pastry.CalculatePastry(2, 1));
         }
     }
 }
